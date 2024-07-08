@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 60px 150px 120px;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: blue;
+        }
+
+        .first {
+            grid-column: span 5;
+            background-color: grey;
+        }
+
+        .second {
+            grid-row: span 2;
+            background-color: azure;      
+        }
+
+        .third {
+            grid-column: span 3;
+            background-color:pink ;  
+        }
+
+        .fourth {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div class="first card"> </div>
+        <div class="second card"> </div>
+        <div class="third card"> </div>
+        <div class="second card"> </div>
+        <div class="fourth card"> </div>
+        <div class="fourth card"> </div>
+        <div class="fourth card"> </div>
+    </div>
+
+</body>
+</html>
